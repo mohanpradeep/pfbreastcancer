@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-
+import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 import { AppComponent } from './app.component';
 import { NewideaComponent } from './newidea/newidea.component';
 
@@ -12,7 +12,8 @@ import { NewideaComponent } from './newidea/newidea.component';
     NewideaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    LeafletModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
